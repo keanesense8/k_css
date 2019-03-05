@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-app id="inspire" dark>
+    <v-app id="inspire">
       <v-navigation-drawer clipped fixed v-model="drawer" app>
         <v-list dense>
           <v-list-tile v-for="item in sideBarItems" @click="sideClick(item.href)">
@@ -36,7 +36,9 @@ export default {
       drawer: true,
       source: "source",
       sideBarItems: [
-        { name: "css begin", href: "css3" }]
+        { name: "css begin", href: "css3" },
+        { name: "Transiton Begin", href: "transiton_demo" }]
+
     };
   },
   methods: {

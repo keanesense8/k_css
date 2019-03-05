@@ -20,6 +20,11 @@ export default new Router({
 			path: '/css3',
 			name: 'css3',
 			component: () => import('./views/html5css3/Css3.vue')
+		},
+		{
+			path: '/transiton_demo',
+			name: 'transiton_demo',
+			component: () => import('./views/html5css3/TransitionDemo.vue')
 		}
 	]
 });

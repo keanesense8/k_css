@@ -1,0 +1,26 @@
+p {
+	display: inline;
+}
+em {
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #ffffff;
+	background: silver;
+	padding: 0.5em;
+	border: 5px solid orange;
+	font-family: Charcoal, sans-serif;
+}
+
+#div_body {
+	background-color: #abe6cd;
+  height: 100%;
+  text-align: center;
+  
+}
