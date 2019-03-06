@@ -20,7 +20,7 @@
         <v-toolbar-title>Application</v-toolbar-title>
       </v-toolbar>
       <v-content>
-        <transition name="router_animate" enter-active-class="animated fadeInDown">
+        <transition name="router_animate" enter-active-class="animated fadeInDown 0.2">
           <router-view/>
         </transition>
       </v-content>
