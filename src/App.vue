@@ -3,14 +3,16 @@
     <v-app id="inspire">
       <v-navigation-drawer clipped fixed v-model="drawer" app>
         <v-list dense>
-          <v-list-tile v-for="item in sideBarItems" @click="sideClick(item.href)">
-            <v-list-tile-action>
-              <v-icon>dashboard</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title>{{item.name}}</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
+          <!-- <transition-group name="bounce" > -->
+            <v-list-tile :key="item.name" v-for="item in sideBarItems" @click="sideClick(item.href)">
+              <v-list-tile-action>
+                <v-icon>dashboard</v-icon>
+              </v-list-tile-action>
+              <v-list-tile-content>
+                <v-list-tile-title>{{item.name}}</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+          <!-- </transition-group> -->
         </v-list>
       </v-navigation-drawer>
       <v-toolbar app fixed clipped-left>
@@ -18,7 +20,9 @@
         <v-toolbar-title>Application</v-toolbar-title>
       </v-toolbar>
       <v-content>
-        <router-view/>
+        <transition name="router_animate" enter-active-class="animated fadeInDown">
+          <router-view/>
+        </transition>
       </v-content>
       <v-footer app fixed>
         <span>&copy; 2017</span>
@@ -37,8 +41,10 @@ export default {
       source: "source",
       sideBarItems: [
         { name: "css begin", href: "css3" },
-        { name: "Transiton Begin", href: "transiton_demo" }]
-
+        { name: "Transiton Begin", href: "transiton_demo" },
+        { name: "Transiton Group", href: "transiton_group_demo" },
+        { name: "Transiton Velocity Lib", href: "velocity_demo" }
+      ]
     };
   },
   methods: {
@@ -49,3 +55,9 @@ export default {
   }
 };
 </script>
+<style>
+
+
+
+</style>
+

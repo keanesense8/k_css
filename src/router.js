@@ -25,6 +25,20 @@ export default new Router({
 			path: '/transiton_demo',
 			name: 'transiton_demo',
 			component: () => import('./views/html5css3/TransitionDemo.vue')
+		},
+		{
+			path: '/transiton_group_demo',
+			name: 'transiton_group_demo',
+			component: () => import('./views/html5css3/TransitionGroupDemo.vue')
 		}
+		,
+		{
+			path: '/velocity_demo',
+			name: 'velocity_demo',
+			component: () => import('./views/html5css3/VelocityDemo.vue')
+		}
+		
+
+		
 	]
 });
