@@ -43,7 +43,9 @@ export default {
         { name: "css begin", href: "css3" },
         { name: "Transiton Begin", href: "transiton_demo" },
         { name: "Transiton Group", href: "transiton_group_demo" },
-        { name: "Transiton Velocity Lib", href: "velocity_demo" }
+        { name: "Transiton Vue anime", href: "anime_demo" },
+        { name: "Transiton Anime", href: "anime_css_demo" },
+        { name: "Svg Animation", href: "svg_animation_demo" }
       ]
     };
   },

@@ -26,6 +26,8 @@
 </template>
 
 <script>
+
+
 export default {
   data() {
     return {
@@ -40,6 +42,7 @@ export default {
       let title = "title" + i;
       this.items.push({ title: title, active: true });
     }
+    console.log( this.$anime);
   },
 
   methods: {
@@ -59,6 +62,8 @@ export default {
     },
     enter(el) {
       //   console.log(el.childNodes);hehe
+    
+      
     },
     enterCancelled(el) {
       console.log("enterCancelled");

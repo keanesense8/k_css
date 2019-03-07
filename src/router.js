@@ -33,10 +33,23 @@ export default new Router({
 		}
 		,
 		{
-			path: '/velocity_demo',
-			name: 'velocity_demo',
-			component: () => import('./views/html5css3/VelocityDemo.vue')
+			path: '/anime_demo',
+			name: 'anime_demo',
+			component: () => import('./views/html5css3/AnimeDemo.vue')
 		}
+		,
+		{
+			path: '/anime_css_demo',
+			name: 'anime_css_demo',
+			component: () => import('./views/html5css3/AnimeCssDemo.vue')
+		}
+		,
+		{
+			path: '/svg_animation_demo',
+			name: 'svg_animation_demo',
+			component: () => import('./views/html5css3/SvgAnimationDemo.vue')
+		}
+		
 		
 
 		

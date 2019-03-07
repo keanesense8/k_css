@@ -4,7 +4,10 @@ import App from './App.vue'
 import store from './store'
 import router from './router'
 import VueLodash from 'vue-lodash'
+// import './plugins/vue-anime-plg'
+import VueAnime from 'vue-animejs';
 
+Vue.use(VueAnime)
 Vue.use(VueLodash)
 
 require ('animate.css')
