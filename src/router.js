@@ -48,7 +48,13 @@ export default new Router({
 			path: '/svg_animation_demo',
 			name: 'svg_animation_demo',
 			component: () => import('./views/html5css3/SvgAnimationDemo.vue')
+		},
+		{
+			path: '/login_demo',
+			name: 'login_demo',
+			component: () => import('./views/Login.vue')
 		}
+		
 		
 		
 

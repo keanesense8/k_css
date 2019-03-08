@@ -45,7 +45,8 @@ export default {
         { name: "Transiton Group", href: "transiton_group_demo" },
         { name: "Transiton Vue anime", href: "anime_demo" },
         { name: "Transiton Anime", href: "anime_css_demo" },
-        { name: "Svg Animation", href: "svg_animation_demo" }
+        { name: "Svg Animation", href: "svg_animation_demo" },
+         { name: "Login", href: "login_demo" }
       ]
     };
   },
